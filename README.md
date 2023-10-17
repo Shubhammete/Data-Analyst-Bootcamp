@@ -1,2 +1,2 @@
-# FreeCodeCamp
-This repository consists the code from FreeCodeCamp Courses
+# Projects
+This repository consists the projects that I have created while learning
