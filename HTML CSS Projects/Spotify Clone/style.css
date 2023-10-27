@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    /* background-image: url("https://1stwebdesigner.com/wp-content/uploads/2018/10/great-landing-pages-01.jpg");
+    background-size: cover; */  
+    background-image: linear-gradient(to right , orange , green);
+}
+
+.header{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.logo{
+    height:7em;
+    width: 13em;
+    background-image: url("https://i.etsystatic.com/22792867/r/il/e8d325/3810008213/il_794xN.3810008213_7bn1.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-left: 5;
+}
+
+.line{
+    width: 4px;
+    color: white;
+    flex: 0 1 4px;
+    margin: 0 -1em;
+    font-size: 2em;
+}
+
+.items{
+    height: 6em;
+    width: 38em;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.maincontent{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    animation: move;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-bottom: 1em;
+}
+
+@keyframes move{
+    0%{
+        color: white;
+    
+    }
+    100%{
+        color: black;
+
+    }
+}
+
+.item > button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.item > button:hover{
+    animation: hover;
+    animation-duration: 1s;
+}
+@keyframes hover {
+    0%{
+        background-color: black;
+    }
+    100%{
+        background-color: grey;
+        
+    }
+    
+}
+
+.startedbtn > button{
+    background-image: linear-gradient(to right , orange , red);
+    padding: 0.3em 3em;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.startedbtn > button:hover{
+    animation: click;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes click {
+    0%{
+    background-image: linear-gradient(to right , orange , red);
+    }
+    50%{
+        background-image: linear-gradient(to right , orange , orange);
+    }
+    100%{
+        background-image: linear-gradient(to right , red , orange);
+    }
+}
