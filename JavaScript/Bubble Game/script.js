@@ -3,7 +3,7 @@ let score = 0
 let hit = 0
 let createBubbles = ()=>{
 let bubbles = ``
-for(let i = 1;i<=147;i++){
+for(let i = 1;i<=56;i++){
     let randomNo = Math.floor(Math.random()*10)
     bubbles +=`<div class="bubble">${randomNo}</div>`
 }
