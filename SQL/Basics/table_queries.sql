@@ -22,4 +22,10 @@ SELECT TOP (1000) [employeeID]
   FROM [Demo Database].[dbo].[Employeeinfo]
 
 -- insert data into table fields
-insert into Employeeinfo values (1001,'John','Doe',20,'Male')
+INSERT INTO Employeeinfo VALUES
+(1001,'John','Doe',48,'Male'),
+(1002,'Kat','Pax',18,'Female'),
+(1003,'Perry','Flat',20,'Female'),
+(1004,'Shai','Sane',30,'Male'),
+(1005,'Albert','Watson',28,'Male'),
+(1006,'Ricky','Hales',36,'Male')
