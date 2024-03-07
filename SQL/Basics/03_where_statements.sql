@@ -17,14 +17,14 @@ SELECT * FROM employeeinfo WHERE Age < 30 OR Gender = 'Female'
 
 -- LIKE here is use to select specific string with filters like string format
 -- lastname includes s in any position 
-SELECT * FROM employeeinfo WHERE LastName LIKE '%S'
+SELECT * FROM employeeinfo WHERE LastName LIKE '%S%'
 
 -- lastname includes s in starting position 
 SELECT * FROM employeeinfo WHERE LastName LIKE 'S%'
 
 -- lastname includes s,a,n in starting position 
 -- here order is important if a is at position of n then it will not work
-SELECT * FROM employeeinfo WHERE LastName LIKE 'S%a%n%'
+SELECT * FROM employeeinfo WHERE LastName LIKE 'S%h%am%'  -- returns shubham but not if S%am%H
 
 -- NULL and NOT NULL 
 -- Returns all null fields in first case and not null in second
@@ -32,6 +32,6 @@ SELECT * FROM employeeinfo WHERE LastName IS NULL
 SELECT * FROM employeeinfo WHERE LastName IS NOT NULL
 
 -- Here we are using multiple = statement we can avoid it using IN statement 
-SELECT * FROM employeeinfo WHERE LastName = 'Doe' OR LastName = 'Pax'
+SELECT * FROM employeeinfo WHERE LastName = 'Doe' AND LastName = 'Pax'
 -- instead write this
 SELECT * FROM employeeinfo WHERE LastName IN ('Doe','Pax')

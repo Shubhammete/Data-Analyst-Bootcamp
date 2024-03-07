@@ -13,14 +13,6 @@ JobTitle varchar(50),
 Salary int
 )
 
--- selecting top 1000 entries in table
-SELECT TOP (1000) [employeeID]
-      ,[FirstName]
-      ,[LastName]
-      ,[Age]
-      ,[Gender]
-  FROM [Demo Database].[dbo].[Employeeinfo]
-
 -- insert data into table fields
 INSERT INTO Employeeinfo VALUES
 (1001,'John','Doe',48,'Male'),
