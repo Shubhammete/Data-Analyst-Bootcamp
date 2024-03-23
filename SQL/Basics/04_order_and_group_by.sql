@@ -29,3 +29,6 @@ FROM employeeinfo
 WHERE Age<30
 GROUP BY Gender
 ORDER BY GenderCount DESC 
+-- Here we select Gender and pseudo column GenderCount and we grouped data according to gender and order according to count
+-- we have to select column only those who have Group by clause or should be in aggreagate function
+-- like here Gender is in aggregate we put gender we cannot select Age here without putting it in aggregate function or in 

@@ -30,3 +30,6 @@ SELECT Employeeinfo.employeeID, FirstName, LastName,Salary
 FROM Employeeinfo
 LEFT OUTER JOIN EmployeeSalary
 ON Employeeinfo.employeeID = EmployeeSalary.employeeID
+
+
+-- If we use Right Inner Join above with same employeeID from Right table it will show only IDs that are shown in table after Right Join and not all of them
