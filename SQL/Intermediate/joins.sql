@@ -24,3 +24,9 @@ ON Employeeinfo.employeeID = EmployeeSalary.employeeID
 SELECT * FROM Employeeinfo
 right OUTER JOIN EmployeeSalary
 ON Employeeinfo.employeeID = EmployeeSalary.employeeID
+
+-- If the both table has same column then explicity add from which field to select
+SELECT Employeeinfo.employeeID, FirstName, LastName,Salary
+FROM Employeeinfo
+LEFT OUTER JOIN EmployeeSalary
+ON Employeeinfo.employeeID = EmployeeSalary.employeeID

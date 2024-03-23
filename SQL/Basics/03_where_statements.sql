@@ -6,7 +6,7 @@ SELECT * FROM employeeinfo WHERE FirstName <> 'John'
 -- here < is operator selects age less than 30
 SELECT * FROM employeeinfo WHERE Age < 30
 
--- here < is operator selects age more than or equal to 30
+-- here >= is operator selects age more than or equal to 30
 SELECT * FROM employeeinfo WHERE Age >= 30
 
 -- here AND checks if both conditions are true or not
