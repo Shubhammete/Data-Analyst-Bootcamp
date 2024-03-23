@@ -24,14 +24,16 @@ SELECT * FROM employeeinfo WHERE LastName LIKE 'S%'
 
 -- lastname includes s,a,n in starting position 
 -- here order is important if a is at position of n then it will not work
-SELECT * FROM employeeinfo WHERE LastName LIKE 'S%h%am%'  -- returns shubham but not if S%am%H
+SELECT * FROM employeeinfo WHERE LastName LIKE 'S%h%am'  -- returns shubham but not if S%am%H
 
+-- _ denotes single character
+SELECT * FROM employeeinfo WHERE LastName LIKE '____A'   -- returns the name ends with A and has only 5 characters include A
 -- NULL and NOT NULL 
 -- Returns all null fields in first case and not null in second
 SELECT * FROM employeeinfo WHERE LastName IS NULL
 SELECT * FROM employeeinfo WHERE LastName IS NOT NULL
 
 -- Here we are using multiple = statement we can avoid it using IN statement 
-SELECT * FROM employeeinfo WHERE LastName = 'Doe' AND LastName = 'Pax'
--- instead write this
+SELECT * FROM employeeinfo WHERE LastName = 'Doe' OR LastName = 'Pax'
+-- instead write this only in case of OR
 SELECT * FROM employeeinfo WHERE LastName IN ('Doe','Pax')
